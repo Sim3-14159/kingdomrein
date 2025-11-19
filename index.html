@@ -1,18 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <style>
-      body {
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>
-      Kingdom R.E.I.N.
-    </h1>
-    <p>
-      Real Estate Investor's Network
-    </p>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Kingdom REIN</title>
+  <!-- Load Inter with the full wght axis 100..900 -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #eee;
+      width: 100vw;
+      margin: 0px;
+      text-align: center;
+      font-family: 'Inter', Arial, sans-serif;
+      margin-top: 3rem;
+    }
+
+    @keyframes expand {
+      0%   { font-variation-settings: 'wght' 300; font-size: 0.1em; }
+      100% { font-variation-settings: 'wght' 100; font-size: 1em; }
+    }
+
+    h2 {
+      font-size: 1em;
+      font-variation-settings: 'wght' 100; /* final state */
+      animation: expand 1.2s ease forwards;
+    }
+    
+    div {
+      background: orange;
+      height: 100px;
+    }
+    
+    hr {
+      background: black;
+      height: 2px;
+      border: none;
+      width: 90%;
+      transition: 2s ease;
+    }
+  </style>
+</head>
+<body>
+  <h1>Kingdom REIN</h1>
+  <h2>Real Estate Investor's Network</h2>
+  <hr>
+  <div>
+  </div>
+  <script>
+    function width() {
+      document.querySelector("hr").style.width = "100%";
+    }
+    
+    setTimeout(width, 0);
+  </script>
+</body>
+</html>
