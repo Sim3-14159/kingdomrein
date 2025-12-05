@@ -1,57 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Kingdom REIN</title>
-  <!-- Load Inter with the full wght axis 100..900 -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-  <style>
-    body {
-      background: #eee;
-      width: 100vw;
-      margin: 0px;
-      text-align: center;
-      font-family: 'Inter', Arial, sans-serif;
-      margin-top: 3rem;
-    }
-
-    @keyframes expand {
-      0%   { font-variation-settings: 'wght' 300; font-size: 0.1em; }
-      100% { font-variation-settings: 'wght' 100; font-size: 1em; }
-    }
-
-    h2 {
-      font-size: 1em;
-      font-variation-settings: 'wght' 100; /* final state */
-      animation: expand 1.2s ease forwards;
-    }
-    
-    div {
-      background: orange;
-      height: 100px;
-    }
-    
-    hr {
-      background: black;
-      height: 2px;
-      border: none;
-      width: 90%;
-      transition: 2s ease;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingdom REIN - Renters to Homeowners</title>
+    <link rel="icon" href="favicon.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --sand: #F5F1EB;
+            --clay: #B5895F;
+            --olive: #3E4B2C;
+            --charcoal: #2C2C2C;
+            --cream: #FFFCF8;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: var(--sand);
+            color: var(--charcoal);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            padding: 2rem 0;
+            border-bottom: 3px solid var(--clay);
+        }
+        
+        .hero {
+            padding: 5rem 0;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            letter-spacing: -2px;
+            color: var(--olive);
+        }
+        
+        .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.8;
+        }
+        
+        .cta-section {
+            padding: 3rem 0;
+            background: var(--olive);
+            color: var(--cream);
+            text-align: center;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 3rem;
+            background: var(--clay);
+            color: var(--cream);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            border: 3px solid var(--clay);
+        }
+        
+        .cta-button:hover {
+            background: transparent;
+            color: var(--clay);
+        }
+        
+        .features {
+            padding: 4rem 0;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .feature-card {
+            padding: 2rem;
+            border: 2px solid var(--clay);
+            background: var(--cream);
+            text-align: center;
+        }
+        
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--olive);
+        }
+        
+        footer {
+            padding: 2rem 0;
+            text-align: center;
+            border-top: 1px solid var(--clay);
+            opacity: 0.7;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .subtitle {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>Kingdom REIN</h1>
-  <h2>Real Estate Investor's Network</h2>
-  <hr>
-  <div>
-  </div>
-  <script>
-    function width() {
-      document.querySelector("hr").style.width = "100%";
-    }
+    <header>
+        <div class="container">
+            <h1 style="text-align: center;">KINGDOM REIN</h1>
+        </div>
+    </header>
     
-    setTimeout(width, 0);
-  </script>
+    <section class="hero">
+        <div class="container">
+            <h1>From Renting to Owning</h1>
+            <p class="subtitle">We connect renters directly to sellers, giving you a clear path to home ownership</p>
+            <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto;">
+                Skip the traditional hurdles. Kingdom REIN matches qualified renters with motivated sellers, creating win-win deals that turn monthly rent into mortgage equity.
+            </p>
+        </div>
+    </section>
+    
+    <section class="features">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 1rem;">How It Works</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>1. Apply as a Renter</h3>
+                    <p>Tell us your budget, preferred area, and timeline. We pre-qualify you so sellers know you’re serious.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>2. Get Matched</h3>
+                    <p>Our platform pairs you with sellers open to rent-to-own, lease-option, or low-down-payment contracts.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>3. Own Your Home</h3>
+                    <p>Move in, build equity, and transition from tenant to homeowner on terms that work for you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cta-section">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Ready to Stop Renting?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">Take the first step toward owning your home—no banks required</p>
+            <a href="#" class="cta-button">Apply to Kingdom REIN</a>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Kingdom REIN. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
