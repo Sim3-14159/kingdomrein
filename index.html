@@ -121,6 +121,18 @@
                 font-size: 1.2rem;
             }
         }
+
+a[href^="mailto:"] {
+color: var(--clay); font-weight: bold;
+transition: 0.2s ease;
+border-radius: 5px;
+padding: 2px;
+text-decoration: none;
+}
+
+a[href^="mailto:"]:hover {
+text-decoration: underline;
+}
     </style>
 </head>
 <body>
@@ -167,7 +179,17 @@
             <a href="#" class="cta-button">Apply to Kingdom REIN</a>
         </div>
     </section>
-    
+
+    <!-- Added messaging section -->
+    <section style="text-align: center; padding: 2rem 0;">
+        <p style="font-size: 1.2rem;">
+            Have questions? 
+            <a href="mailto:kingdomrein@use.startmail.com">
+                Message Kingdom REIN
+            </a>
+        </p>
+    </section>
+
     <footer>
         <div class="container">
             <p>&copy; 2025 Kingdom REIN. All rights reserved.</p>
