@@ -5,174 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kingdom REIN - Renters to Homeowners</title>
     <link rel="icon" href="favicon.png">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        :root {
-            --sand: #F5F1EB;
-            --clay: #B5895F;
-            --olive: #3E4B2C;
-            --charcoal: #2C2C2C;
-            --cream: #FFFCF8;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: var(--sand);
-            color: var(--charcoal);
-            line-height: 1.6;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        header {
-            padding: 2rem 0;
-            border-bottom: 3px solid var(--clay);
-        }
-        
-        .hero {
-            padding: 5rem 0;
-            text-align: center;
-        }
-        
-        h1 {
-            font-size: 3.5rem;
-            font-weight: 900;
-            margin-bottom: 1rem;
-            letter-spacing: -2px;
-            color: var(--olive);
-        }
-        
-        .subtitle {
-            font-size: 1.5rem;
-            margin-bottom: 2rem;
-            opacity: 0.8;
-        }
-        
-        .cta-section {
-            padding: 3rem 0;
-            background: var(--olive);
-            color: var(--cream);
-            text-align: center;
-        }
-        
-        .cta-button {
-            display: inline-block;
-            padding: 1rem 3rem;
-            background: var(--clay);
-            color: var(--cream);
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.2rem;
-            transition: all 0.3s ease;
-            border: 3px solid var(--clay);
-        }
-        
-        .cta-button:hover {
-            background: transparent;
-            color: var(--clay);
-        }
-        
-        .features {
-            padding: 4rem 0;
-        }
-        
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        
-        .feature-card {
-            padding: 2rem;
-            border: 2px solid var(--clay);
-            background: var(--cream);
-            text-align: center;
-        }
-        
-        .feature-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: var(--olive);
-        }
-        
-        footer {
-            padding: 2rem 0;
-            text-align: center;
-            border-top: 1px solid var(--clay);
-            opacity: 0.7;
-        }
-        
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5rem;
-            }
-            
-            .subtitle {
-                font-size: 1.2rem;
-            }
-        }
-                
-        a[href^="mailto:"] {
-            color: var(--clay); font-weight: bold;
-            transition: 0.2s ease;
-            border-radius: 5px;
-            padding: 2px;
-            text-decoration: none;
-        }
-
-        a[href^="mailto:"]:hover {
-            text-decoration: underline;
-        }
-
-        .flex-container {
-            display: flex;
-            justify-content: center; /* Centers horizontally */
-            align-items: center;     /* Centers vertically */
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1 style="text-align: center;">KINGDOM REIN</h1>
+            <a class="header-link" href="https://kingdomrein.net"><h1 class="header">KINGDOM REIN</h1></a>
+            <span>Real Estate Investors Network</span>
         </div>
     </header>
     
     <section class="hero">
         <div class="container">
-            <h1>From Renting to Owning</h1>
-            <p class="subtitle">We connect renters directly to sellers, giving you a clear path to home ownership</p>
-            <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto;">
-                Skip the traditional hurdles. Kingdom REIN matches qualified renters with motivated sellers, creating win-win deals that turn monthly rent into mortgage equity.
+            <p class="subtitle">
+                <strong>We’re Not Building an Empire. We’re Building a Kingdom.</strong>
+            </p>
+            <p class="subtitle">
+                We believe real estate shouldn’t be a game where only some people get to win. 
+            </p>
+            <p class="subtitle">
+                <strong>Our vision is to build a community where everyone has a place, everyone has an opportunity, and everyone gets to reign in life through building generational wealth.
+                </strong>
+            </p>
+            <p class="subtitle">
+               <strong class="header">KINGDOM REIN</strong> is a <u>real estate education</u> and <u>coaching</u> platform that helps people understand real estate, discover new opportunities, and create pathways toward ownership.
             </p>
         </div>
     </section>
     
     <section class="features">
         <div class="container">
-            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 1rem;">How It Works</h2>
+            <h2 class="section-heading">REAL ESTATE. REIMAGINED</h2>
             <div class="features-grid">
                 <div class="feature-card">
-                    <h3>1. Apply as a Renter</h3>
-                    <p>Tell us your budget, preferred area, and timeline. We pre-qualify you so sellers know you’re serious.</p>
+                    <h3>ONLINE COURSES</h3>
+                    <p>
+                        Learn real estate at your own pace with practical courses designed to help you understand the fundamentals and recognize opportunities.
+                        <br><br><a class="explore-link" href="#">[ VIEW COURSES ]</a>
+                    </p>
                 </div>
                 <div class="feature-card">
-                    <h3>2. Get Matched</h3>
-                    <p>Our platform pairs you with sellers open to rent-to-own, lease-option, or low-down-payment contracts.</p>
+                    <h3>DOWNLOADABLE RESOURCES</h3>
+                    <p>
+                        Get guides, worksheets, checklists, templates, and educational resources you can download and use on your real estate journey.
+                    <br><br><a class="explore-link" href="#">[ EXPLORE RESOURCES ]</a>
+                </p>
                 </div>
                 <div class="feature-card">
-                    <h3>3. Own Your Home</h3>
-                    <p>Move in, build equity, and transition from tenant to homeowner on terms that work for you.</p>
+                    <h3>COACHING & EDUCATION</h3>
+                    <p>
+                        Go beyond information. Develop a strategy, build confidence, and learn how to approach real estate with knowledge and purpose.
+                    <br><br><a class="explore-link" href="#">[ LEARN ABOUT COACHING ]</a>
+                </p>
+                </div>
+                <div class="feature-card">
+                    <h3>RENTERS → OWNERS</h3>
+                    <p>
+                        Renting doesn't have to be the end of the conversation. We help connect renters with real estate opportunities and educate them about potential pathways toward ownership.
+                    <br><br><a class="explore-link" href="#">[ FIND OUT HOW ]</a>
+                </p>
                 </div>
             </div>
         </div>
@@ -180,27 +74,31 @@
     
     <section class="cta-section">
         <div class="container">
-            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Ready to Stop Renting?</h2>
-            <p style="font-size: 1.2rem; margin-bottom: 2rem;">Take the first step toward owning your home—no banks required</p>
-            
-            <div class="flex-container">
-                <script async
-                src="https://js.stripe.com/v3/buy-button.js">
-                </script>
+            <h2 class="section-heading">Ready to Stop Renting?</h2>
+            <!--<p class="cta-text">Download Our Real Estate Investment Calculator</p>-->
+            <a download href="abcdefghijklmnopqrstuvwxyz/CASHFLOW AND ROI GUIDE.xlsx" class="cta-button">Download Our Cashflow & ROI Guide</a>
+        </div>
+        <br>
+        </section>
+<hr><br>
+<!--
+        <div class="flex-container">
+            <script async
+            src="https://js.stripe.com/v3/buy-button.js">
+            </script>
 
-                <stripe-buy-button
-                buy-button-id="buy_btn_1U2gxzBrnIcX9f1kQ3yf6k4l"
-                publishable-key="pk_live_51U1zwtBrnIcX9f1kB7uZDApTuF5a13jnJLjsSyspePmeFZs8WvknoGicfb5g31jNZ5e0ip5ciIf1n0DbIWOaKck300H5draVBf"
-                >
-                </stripe-buy-button>
-            </div>
-
+            <stripe-buy-button
+            buy-button-id="buy_btn_1U2gxzBrnIcX9f1kQ3yf6k4l"
+            publishable-key="pk_live_51U1zwtBrnIcX9f1kB7uZDApTuF5a13jnJLjsSyspePmeFZs8WvknoGicfb5g31jNZ5e0ip5ciIf1n0DbIWOaKck300H5draVBf"
+            >
+            </stripe-buy-button>
         </div>
     </section>
+-->
 
     <!-- Added messaging section -->
-    <section style="text-align: center; padding: 2rem;">
-        <p style="font-size: 1.2rem;">
+    <section class="message-section">
+        <p class="message-text">
             Have questions? 
             <a href="mailto:kingdomrein@use.startmail.com">
                 Message Kingdom REIN
@@ -210,7 +108,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Kingdom REIN. All rights reserved.</p>
+            <p>&copy; 2025-2026 Kingdom REIN. All rights reserved.</p>
         </div>
     </footer>
 </body>
